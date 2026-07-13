@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -866,7 +868,7 @@ function copyCode(id){
         builtHtml += '\n';
         pre.innerHTML = builtHtml + '<span class="type-cursor"></span>';
         lineIdx++; charIdx = 0;
-        setTimeout(typeChar, 90);
+        setTimeout(typeChar, 260);
         return;
       }
 
@@ -875,7 +877,7 @@ function copyCode(id){
         charIdx++;
         const partialPlain = plain.slice(0, charIdx);
         pre.innerHTML = builtHtml + escapeHtml(partialPlain) + '<span class="type-cursor"></span>';
-        const speed = 14 + Math.random()*22;
+        const speed = 38 + Math.random()*45;
         setTimeout(typeChar, speed);
       } else {
         // línea completa: sustituimos por su versión con syntax highlight real
@@ -883,7 +885,7 @@ function copyCode(id){
         pre.innerHTML = builtHtml + '<span class="type-cursor"></span>';
         if(line.explain){ setCaption('▸ ' + line.explain); }
         lineIdx++; charIdx = 0;
-        setTimeout(typeChar, line.explain ? 480 : 160);
+        setTimeout(typeChar, line.explain ? 1900 : 450);
       }
     }
     typeChar();
