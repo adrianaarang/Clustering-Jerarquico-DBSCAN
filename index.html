@@ -418,7 +418,7 @@
   <div class="wrap">
     <div class="eyebrow">Píldora técnica · Aprendizaje no supervisado</div>
     <h1 class="title">Agrupar sin que <em>nadie</em> te dé el mapa</h1>
-    <p class="subhead">Clustering Jerárquico y DBSCAN: dos formas distintas de descubrir estructura en datos que nunca vinieron etiquetados.</p>
+    <p class="subhead">Clustering Jerárquico y DBSCAN: dos formas distintas de descubrir estructura en datos que nunca vinieron etiquetados. Una sesión de 60–90 min: intuición, código en vivo, reto y cierre técnico.</p>
     <div class="hero-actions">
       <a href="#bloque1" class="btn btn-primary">Empezar la expedición ↓</a>
       <a href="#bloque3" class="btn btn-ghost">Ir directo al reto</a>
@@ -433,7 +433,7 @@
       <div class="waypoint">PARADA 01</div>
       <div>
         <h2>Contextualización e intuición</h2>
-        <p class="section-lede">Por qué existen estos algoritmos y qué problema resuelve cada uno, antes de tocar una línea de código.</p>
+        <p class="section-lede">Antes de tocar una línea de código, os quiero contar por qué existen estos algoritmos y qué problema resuelve cada uno.</p>
       </div>
     </div>
 
@@ -441,22 +441,22 @@
       <div class="card">
         <span class="tag">Analogía · Álbum familiar</span>
         <h3>Clustering, la idea general</h3>
-        <p>Una caja de fotos mezcladas de familia, amigos y compañeros de trabajo, sin ninguna etiqueta. Tu ojo empieza a hacer montones por parecido. Ningún algoritmo te dice "esto es el grupo A": lo descubre solo, mirando qué datos se parecen entre sí.</p>
+        <p>Pensad en una caja de fotos mezcladas de familia, amigos y compañeros de trabajo, sin ninguna etiqueta. Vuestro ojo empieza a hacer montones por parecido. Yo no os digo "esto es el grupo A": el algoritmo lo descubre solo, mirando qué datos se parecen entre sí.</p>
       </div>
       <div class="card">
         <span class="tag">Analogía · Árbol genealógico</span>
         <h3>Hierarchical Clustering</h3>
-        <p>Empieza con cada punto como su propio grupo y va fusionando los dos más parecidos, uno a uno, hasta que todo queda en un único grupo. El resultado es un árbol (dendrograma): tú decides después por dónde "cortarlo".</p>
+        <p>Empieza con cada punto como su propio grupo y va fusionando los dos más parecidos, uno a uno, hasta que todo queda en un único grupo. El resultado es un árbol (dendrograma): yo decido después, y os lo enseño, por dónde "cortarlo".</p>
       </div>
       <div class="card">
         <span class="tag">Analogía · Plaza vista desde un dron</span>
         <h3>DBSCAN</h3>
-        <p>Busca zonas densas — mucha gente muy junta — y las marca como clusters. Los puntos sueltos, aislados, se marcan como ruido. No fuerza a nadie a pertenecer a un grupo si no encaja en ninguna "multitud".</p>
+        <p>Yo le pido que busque zonas densas — mucha gente muy junta — y las marque como clusters. A los puntos sueltos, aislados, los marca como ruido. No obligo a nadie a pertenecer a un grupo si no encaja en ninguna "multitud".</p>
       </div>
       <div class="card">
         <span class="tag">Por qué importa</span>
         <h3>El "por qué" en una frase</h3>
-        <p>La mayoría de los datos del mundo real no vienen etiquetados. Segmentar clientes, agrupar genes, detectar comunidades en redes: en todos esos casos, nadie sabe de antemano cuántos grupos hay ni cuáles son.</p>
+        <p>Os lo digo yo, por experiencia: la mayoría de los datos del mundo real no vienen etiquetados. Segmentar clientes, agrupar genes, detectar comunidades en redes: en todos esos casos, nadie sabe de antemano cuántos grupos hay ni cuáles son.</p>
       </div>
     </div>
 
@@ -467,7 +467,7 @@
           <button class="viz-btn" id="playDendro">▶ reproducir</button>
         </div>
         <canvas id="dendroCanvas" width="520" height="300"></canvas>
-        <p class="section-lede" style="margin-top:12px;font-size:0.85rem;">Cada línea horizontal es una fusión. Cuanto más alto ocurre, más "distintos" eran los grupos que se juntaron.</p>
+        <p class="section-lede" style="margin-top:12px;font-size:0.85rem;">Fijaos: cada línea horizontal es una fusión. Cuanto más alto ocurre, más "distintos" eran los grupos que se acaban de juntar.</p>
       </div>
       <div class="viz-frame">
         <div class="viz-title">
@@ -475,7 +475,7 @@
           <button class="viz-btn" id="playDbscanDemo">▶ reproducir</button>
         </div>
         <canvas id="dbscanDemoCanvas" width="520" height="300"></canvas>
-        <p class="section-lede" style="margin-top:12px;font-size:0.85rem;">El algoritmo "contagia" el cluster de vecino en vecino mientras haya suficiente densidad. Los puntos grises quedan como ruido.</p>
+        <p class="section-lede" style="margin-top:12px;font-size:0.85rem;">Le pido al algoritmo que "contagie" el cluster de vecino en vecino mientras haya suficiente densidad. Los puntos grises os los señalo como ruido.</p>
       </div>
     </div>
   </div>
@@ -488,7 +488,7 @@
       <div class="waypoint">PARADA 02</div>
       <div>
         <h2>Live coding / Demo de código</h2>
-        <p class="section-lede">Lo mínimo para levantar ambos algoritmos con scikit-learn. Se construye en directo, línea a línea, con el grupo mirando.</p>
+        <p class="section-lede">Lo mínimo para levantar ambos algoritmos con scikit-learn. Os lo construyo en directo, línea a línea, mientras miráis.</p>
       </div>
     </div>
 
@@ -539,7 +539,7 @@
       <div class="waypoint">PARADA 03</div>
       <div>
         <h2>Reto de aplicación</h2>
-        <p class="section-lede">Planta puntos en el lienzo como si fueran ubicaciones sin explorar. Compara cómo los agruparía cada algoritmo, ajustando sus parámetros en vivo.</p>
+        <p class="section-lede">Os propongo esto: plantad puntos en el lienzo como si fueran ubicaciones sin explorar. Comparad cómo los agruparía cada algoritmo, ajustando sus parámetros en vivo.</p>
       </div>
     </div>
 
@@ -596,13 +596,13 @@
 
       <div class="reto-step">
         <span class="reto-num">1</span>
-        <p>Dibuja 3 nubes de puntos claramente separadas + 2 puntos sueltos lejos de todo, ahí arriba en el lienzo.</p>
+        <p>Os propongo que dibujéis 3 nubes de puntos claramente separadas + 2 puntos sueltos lejos de todo, ahí arriba en el lienzo.</p>
       </div>
 
       <div class="reto-step">
         <span class="reto-num">2</span>
         <div style="flex:1;">
-          <p>Con Jerárquico, ¿qué hace falta para que los puntos sueltos formen "su propio grupo" en vez de mezclarse con una nube real?</p>
+          <p>Os pregunto: con Jerárquico, ¿qué hace falta para que los puntos sueltos formen "su propio grupo" en vez de mezclarse con una nube real?</p>
           <div class="quiz-box" id="quiz-hier">
             <div class="quiz-options">
               <button class="quiz-opt" data-correct="false">Bajar n_clusters a 1 o 2</button>
@@ -611,7 +611,7 @@
               <button class="quiz-opt" data-correct="false">Nada, el jerárquico nunca los aísla</button>
             </div>
             <div class="quiz-feedback" id="feedback-quiz-hier"></div>
-            <div class="quiz-explain" id="explain-quiz-hier">A mí lo que me funciona es esto: el árbol jerárquico fusiona todo tarde o temprano, así que un punto suelto solo se queda "solo" mientras el corte esté por debajo de la altura a la que se fusiona con su vecino más cercano. Con 3 nubes + 2 sueltos necesito n_clusters=5 para que cada punto suelto tenga su propio grupo — si bajo el número, el árbol los absorbe dentro de la nube más próxima. Pruébalo en el lienzo subiendo el slider poco a poco.</div>
+            <div class="quiz-explain" id="explain-quiz-hier">A mí lo que me funciona es esto: el árbol jerárquico fusiona todo tarde o temprano, así que un punto suelto solo se queda "solo" mientras el corte esté por debajo de la altura a la que se fusiona con su vecino más cercano. Con 3 nubes + 2 sueltos necesito n_clusters=5 para que cada punto suelto tenga su propio grupo — si bajo el número, el árbol los absorbe dentro de la nube más próxima. Probadlo vosotros en el lienzo subiendo el slider poco a poco.</div>
           </div>
         </div>
       </div>
@@ -619,7 +619,7 @@
       <div class="reto-step">
         <span class="reto-num">3</span>
         <div style="flex:1;">
-          <p>Con DBSCAN, ¿qué combinación de parámetros deja esos mismos puntos como ruido en vez de forzarlos a un cluster?</p>
+          <p>Os pregunto ahora: con DBSCAN, ¿qué combinación de parámetros deja esos mismos puntos como ruido en vez de forzarlos a un cluster?</p>
           <div class="quiz-box" id="quiz-dbscan-reto">
             <div class="quiz-options">
               <button class="quiz-opt" data-correct="false">eps grande y min_samples bajo</button>
